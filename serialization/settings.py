@@ -25,6 +25,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SECRET_KEY = local_settings.SECRET_KEY
+
 
 # Application definition
 
