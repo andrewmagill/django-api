@@ -10,7 +10,7 @@ You may want to work through the [tutorial] [tutorial] yourself, or take a look 
 #### Install requirements:
 
     pip install django
-    pip install django-rest-framework
+    pip install djangorestframework
     pip install pygments
 
 #### Clone my repo:
