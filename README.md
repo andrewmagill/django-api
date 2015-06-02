@@ -21,7 +21,7 @@ You may want to work through the [tutorial] [tutorial] yourself, or take a look 
 
     cd django-api
     touch serialization/local_settings.py
-    echo "SECRET_KEY = 'bigsecret'" >> local_settings.py
+    echo "SECRET_KEY = 'bigsecret'" >> serialization/local_settings.py
 
 #### Run:
 
