@@ -22,9 +22,15 @@ class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = SnippetSerializer
 
 class UserList(generics.ListAPIView):
+    """
+    Read-only view to list all users
+    """
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
 class UserDetail(generics.RetrieveAPIView):
+    """
+    Read-only view to list user
+    """
     queryset = User.objects.all()
     serializer_class = UserSerializer

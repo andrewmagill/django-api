@@ -11,6 +11,8 @@ class SnippetSerializer(serializers.ModelSerializer):
         fields = ('id', 'owner', 'title', 'code', 'linenos', 'language', 'style')
 
 class UserSerializer(serializers.ModelSerializer):
+    # 'snippets' has a reverse relationship to the user model, so
+    # it will not be included by default, we need to explicitly add the field
     snippets = serializers.PrimaryKeyRelatedField(many=True,
                                                   queryset=Snippet.objects.all())
 
